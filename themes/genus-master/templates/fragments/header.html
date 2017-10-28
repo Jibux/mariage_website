@@ -1,0 +1,10 @@
+<header class="site-header">
+    <a href="{{ SITEURL }}">
+        {% if SITELOGO %}
+        <img class="photo circle" itemprop="image" src="{{ SITELOGO }}" alt="{{ SITETITLE }}" title="{{ SITETITLE }}">
+        {% else %}
+        {% endif %}
+    </a>
+    <h1 itemprop="name">{{ SITETITLE }}</h1>
+    {% if SITESUBTITLE %}<h3>{{ SITESUBTITLE }}</h3>{% endif %}
+</header>

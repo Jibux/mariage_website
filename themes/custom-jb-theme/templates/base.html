@@ -1,0 +1,38 @@
+<!doctype html>
+<html class="no-js" lang="{{ DEFAULT_LANG }}">
+<head>
+    {% block head %}
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+	<!--[if lt IE 10]>
+	  <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+	<!--[if IE]>
+	 <h1>Votre navigateur internet est obsolète. Vous allez être redirigé vers notre liste de mariage...</h1>
+	  <meta http-equiv="refresh" content="0;url=http://millemercismariage.com/jbhagatheb/liste.html" /> 
+    <![endif]-->
+
+    <title>{% block title2 %}{{ SITETITLE2 }}{% endblock title2 %}</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=9" />
+	<link rel="shortcut icon" type="image/x-icon" href="{{ SITEURL }}/images/favicon.ico">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700|Source+Serif+Pro:400,700">
+	<link href="https://fonts.googleapis.com/css?family=Monsieur+La+Doulaise" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Philosopher" rel="stylesheet"> 
+    <link rel="stylesheet" type="text/css" href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/css/main.css">
+	<link rel="stylesheet" type="text/css" href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/css/fontello/css/fontello.css">
+
+    {% endblock %}
+</head>
+<body itemscope itemtype="http://schema.org/Blog">
+    {% include "fragments/header.html" %}
+
+    <section class="main-content">
+    {% block content %}{% endblock %}
+    </section>
+
+    {% include "fragments/footer.html" %}
+</body>
+</html>

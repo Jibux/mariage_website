@@ -1,0 +1,34 @@
+{
+  "name": "",
+  "css_prefix_text": "icon-",
+  "css_use_suffix": false,
+  "hinting": true,
+  "units_per_em": 1000,
+  "ascent": 850,
+  "glyphs": [
+    {
+      "uid": "7f8b6c0519d85119a6f41fa3c5794806",
+      "css": "religious-christian",
+      "code": 59439,
+      "src": "maki"
+    },
+    {
+      "uid": "5c8822b310f20896a3c55a25b71008a8",
+      "css": "bar",
+      "code": 59396,
+      "src": "maki"
+    },
+    {
+      "uid": "5cc58545bb38c912940470480d3df145",
+      "css": "restaurant",
+      "code": 59442,
+      "src": "maki"
+    },
+    {
+      "uid": "653750436fc99eeb29ccd487e6a5bfa6",
+      "css": "school",
+      "code": 59444,
+      "src": "maki"
+    }
+  ]
+}

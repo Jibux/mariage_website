@@ -1,0 +1,162 @@
+@import "_reset.css";
+@import "_base.css";
+@import "_syntax.css";
+@import "_layout.css";
+@import "_flex.css";
+@import "_typography.css";
+@import "_colors.css";
+
+@import "_tables.css";
+@import "_buttons.css";
+@import "_tags.css";
+@import "_circles.css";
+
+@import "_author.css";
+
+/*@import url('https://fonts.googleapis.com/css?family=Dancing+Script|Roboto');
+@import url('https://fonts.googleapis.com/css?family=Poiret+One');
+
+body{
+    background-color: #FAFAFA;
+    font-family: 'Roboto', sans-serif;
+}
+h1{
+  color:RGB(19, 78, 94);
+  font-family: 'Poiret One', cursive;
+}
+p{
+  color:RGB(113, 178, 128);
+  font-family: 'Roboto', sans-serif;
+}
+.simple {
+    list-style-type: none;
+    border: 1px solid RGB(19, 78, 94);
+    box-shadow: 0.125em 0.125em 0.125em rgba(0,0,0,0.2);
+    padding:0;
+    background-color: white;
+}
+.simple li {
+    padding: 0.5em 2em;
+    border-top: 1px solid rgba(255,255,255,0.4);
+    border-bottom: 1px solid RGBA(19, 78, 94,0.4);
+    color: RGB(113, 178, 128);
+}
+.simple li::before{
+    content:'~';
+    padding-right: 2em;    
+}
+.simple li:hover{
+    background: linear-gradient(to left,RGB(19, 78, 94),RGB(113, 178, 128));
+    color: white;
+}
+.simple li a{
+    color: inherit;
+    font-family: 'Roboto', sans-serif;
+}*/
+
+
+
+@font-face {
+  font-family: 'Rouge Script';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Rouge Script'), local('RougeScript-Regular'), url(https://fonts.gstatic.com/s/rougescript/v5/AgXDSqZJmy12qS0ixjs6V-gdm0LZdjqr5-oayXSOefg.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+@font-face {
+  font-family: 'Monsieur La Doulaise';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Monsieur La Doulaise Regular'), local('MonsieurLaDoulaise-Regular'), url(https://fonts.gstatic.com/s/monsieurladoulaise/v5/IMAdMj6Eq9jZ46CPctFtME38jXQVHF6c6kGoBg5sEAQ.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: 'Monsieur La Doulaise';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Monsieur La Doulaise Regular'), local('MonsieurLaDoulaise-Regular'), url(https://fonts.gstatic.com/s/monsieurladoulaise/v5/IMAdMj6Eq9jZ46CPctFtMGbf8AroiH6JhvSUUeQzW1U.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+
+body {
+    background-color:#E0E0D1;
+    font-family:Roboto,sans-serif
+}
+h1 {
+    font-size:3em;
+    color:#FC9183;
+    font-family:'Rouge Script', 'Monsieur La Doulaise',sans-serif;
+    font-weight:400;
+}
+
+#content h2 {
+    font-size:2em;
+    color:#FC9183;
+    font-family:'Rouge Script', 'Monsieur La Doulaise',sans-serif;
+    font-weight:400;
+}
+
+p {
+    color:#061F12;
+    font-family:Roboto,sans-serif
+}
+.site-header{
+    background-image: linear-gradient(to bottom,#FBA798, #F36B5D);
+    position:relative;
+}
+.site-header:after{
+    content:'';
+    top:100%;
+    left:50%;
+    width:0;
+    height: 0;
+    border: solid transparent;
+    position: absolute;
+    pointer-events: none;
+    border-top-color: #F36B5D;
+    border-width: 5vmin;
+    margin-left: -5vmin;
+}
+.site-header h1{
+    font-size: 4em;
+    color:white;
+}
+
+.site-header h3 {
+    font-size:2em;
+    color:white;
+    font-family:'Rouge Script', 'Monsieur La Doulaise',sans-serif;
+    font-weight:400;
+	font-style: italic;
+}
+
+.simple {
+    list-style-type:none;
+    border:1px solid rgba(0,0,0,0.4);
+    box-shadow:.125em .125em .125em rgba(0,0,0,.2);
+    padding:0;
+    background-color:#fff
+}
+.simple li {
+    padding:.5em 2em;
+    border-top:1px solid rgba(255,255,255,.4);
+    border-bottom:1px solid RGBA(19,78,94,.4);
+    color:#061F12;
+}
+
+ul {
+	list-style-image: url('images/wedding-rings.svg');
+}
+
+.simple li::before {
+    content:'~';
+    padding-right:2em
+}
+.simple li:hover {
+    background-image: linear-gradient(to right,#FBA798, #F36B5D);
+    color:#fff
+}
+.simple li a {
+    color:inherit;
+    font-family:Roboto,sans-serif
+}
